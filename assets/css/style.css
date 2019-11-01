@@ -1,0 +1,26 @@
+h1 {
+    background-color: green;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.directions {
+    background-color: bisque;
+    padding: 5px;
+}
+
+#random-number {
+    height: 100px;
+    background-color: greenyellow;
+}
+
+#wins-losses-text {
+    display: inline-block;
+    border: solid;
+    background-color: greenyellow;
+}
+
+#image1, #image2, #image3, #image4 {
+    height: 75px;
+    width: 75px;
+}
