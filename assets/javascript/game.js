@@ -78,12 +78,9 @@ function reset(){
 }
 
 $("#image1").on("click", function () {
-    // crystalScore = ($(this).attr("value")); parseInt(crystalScore);
     crystalScore = crystalOne;
     totalScore = totalScore + crystalScore;
-    // totalScore++;
-    alert("New score: " + crystalScore);
-    // $("#score-counter").attr("value", this.totalScore);
+    // alert("New score: " + crystalScore);
     $("#total-score").text("Your total score is:  " + totalScore);
     $("#score-counter").text("Score of chosen crystal: " + crystalScore);
     console.log(totalScore);
@@ -99,12 +96,9 @@ $("#image1").on("click", function () {
 )
 
     $("#image2").on("click", function () {
-        // crystalScore = ($(this).attr("value")); parseInt(crystalScore);
         crystalScore = crystalTwo;
         totalScore = totalScore + crystalScore;
-        // totalScore++;
-        alert("New score: " + crystalScore);
-        // $("#score-counter").attr("value", this.totalScore);
+        // alert("New score: " + crystalScore);
         $("#total-score").text("Your total score is:  " + totalScore);
         $("#score-counter").text("Score of chosen crystal: " + crystalScore);
         console.log(totalScore);
@@ -121,12 +115,9 @@ $("#image1").on("click", function () {
     )
 
         $("#image3").on("click", function () {
-            // crystalScore = ($(this).attr("value")); parseInt(crystalScore);
             crystalScore = crystalThree;
          totalScore = totalScore + crystalScore;
-            // totalScore++;
-            alert("New score: " + crystalScore);
-            // $("#score-counter").attr("value", this.totalScore);
+            // alert("New score: " + crystalScore);
             $("#total-score").text("Your total score is:  " + totalScore);
             $("#score-counter").text("Score of chosen crystal: " + crystalScore);
             console.log(totalScore);
@@ -143,12 +134,9 @@ $("#image1").on("click", function () {
             }
         )
             $("#image4").on("click", function () {
-                // crystalScore = ($(this).attr("value")); parseInt(crystalScore);
                 crystalScore = crystalFour;
                 totalScore = totalScore + crystalScore;
-                // totalScore++;
-                alert("New score: " + crystalScore);
-                // $("#score-counter").attr("value", this.totalScore);
+                // alert("New score: " + crystalScore);
                 $("#total-score").text("Your total score is:  " + totalScore);
                 $("#score-counter").text("Score of chosen crystal: " + crystalScore);
                 console.log(totalScore);
