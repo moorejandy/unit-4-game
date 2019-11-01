@@ -14,13 +14,8 @@ h1 {
     background-color: greenyellow;
 }
 
-#wins-losses-text {
-    display: inline-block;
-    border: solid;
-    background-color: greenyellow;
-}
-
 #image1, #image2, #image3, #image4 {
     height: 75px;
     width: 75px;
 }
+

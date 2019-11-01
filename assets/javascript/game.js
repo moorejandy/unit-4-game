@@ -52,28 +52,29 @@ function randGoalSelection() {
 function gameWin(){
     alert("YOU WIN!!!");
     wins++;
-    $("#wins-text").text("Wins: " + wins);
+    $("#wins-loss-text").text("Wins: " + wins + " " + "Losses: " + " " + losses);
     reset();
 }
 
 function gameLoss() {
     alert("YOU LOST");
     losses++;
-    $("#loss-text").text("Losses: " + losses);
+    $("#wins-loss-text").text("Wins: " + wins + " " + "Losses: " + " " + losses);
     reset();
 }
 
 function reset(){
 
-    goalNumber = Math.floor(Math.random() * (max - min + 1) + min);
-    crystalOne = Math.floor(Math.random() * (crystalMax - crystalMin + 1) + crystalMin);
-    crystalTwo = Math.floor(Math.random() * (crystalMax - crystalMin + 1) + crystalMin);
-    crystalThree = Math.floor(Math.random() * (crystalMax - crystalMin + 1) + crystalMin);
-    crystalFour = Math.floor(Math.random() * (crystalMax - crystalMin + 1) + crystalMin);
+    // goalNumber = Math.floor(Math.random() * (max - min + 1) + min);
+    // crystalOne = Math.floor(Math.random() * (crystalMax - crystalMin + 1) + crystalMin);
+    // crystalTwo = Math.floor(Math.random() * (crystalMax - crystalMin + 1) + crystalMin);
+    // crystalThree = Math.floor(Math.random() * (crystalMax - crystalMin + 1) + crystalMin);
+    // crystalFour = Math.floor(Math.random() * (crystalMax - crystalMin + 1) + crystalMin);
     totalScore = 0;
     $("#total-score").text("Your total score is:  " + totalScore);
     crystalScore = 0;
     $("#score-counter").text("Score of chosen crystal: " + crystalScore);
+    randGoalSelection();
 
 }
 
