@@ -12,9 +12,6 @@
 
 //create a game reset function that picks a new random nunber, assings new values to the crystals, and clears the total score box
 
-// var goalArray = [19,20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 
-//     41, 42, 43, 44, 45, 46, 47, 48, 49 , 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63,
-
 var max = 120;
 var min = 19;
 var crystalMax = 12;
@@ -49,7 +46,7 @@ function randGoalSelection() {
 
 }
 
-function gameWin(){
+function gameWin() {
     alert("YOU WIN!!!");
     wins++;
     $("#wins-loss-text").text("Wins: " + wins + " " + "Losses: " + " " + losses);
@@ -63,7 +60,7 @@ function gameLoss() {
     reset();
 }
 
-function reset(){
+function reset() {
 
     // goalNumber = Math.floor(Math.random() * (max - min + 1) + min);
     // crystalOne = Math.floor(Math.random() * (crystalMax - crystalMin + 1) + crystalMin);
@@ -89,74 +86,74 @@ $("#image1").on("click", function () {
     if (totalScore === goalNumber) {
         gameWin();
     }
-        else if (totalScore > goalNumber){
-            gameLoss();
-        }
+    else if (totalScore > goalNumber) {
+        gameLoss();
     }
+}
 
 )
 
-    $("#image2").on("click", function () {
-        crystalScore = crystalTwo;
-        totalScore = totalScore + crystalScore;
-        // alert("New score: " + crystalScore);
-        $("#total-score").text("Your total score is:  " + totalScore);
-        $("#score-counter").text("Score of chosen crystal: " + crystalScore);
-        console.log(totalScore);
-        console.log(crystalScore);
-        if (totalScore === goalNumber) {
-            gameWin();
-            randGoalSelection(19, 120);
-        }
-            else if (totalScore > goalNumber){
-                gameLoss();
-                randGoalSelection(19, 120);
-            }
-        }
-    )
+$("#image2").on("click", function () {
+    crystalScore = crystalTwo;
+    totalScore = totalScore + crystalScore;
+    // alert("New score: " + crystalScore);
+    $("#total-score").text("Your total score is:  " + totalScore);
+    $("#score-counter").text("Score of chosen crystal: " + crystalScore);
+    console.log(totalScore);
+    console.log(crystalScore);
+    if (totalScore === goalNumber) {
+        gameWin();
+        randGoalSelection(19, 120);
+    }
+    else if (totalScore > goalNumber) {
+        gameLoss();
+        randGoalSelection(19, 120);
+    }
+}
+)
 
-        $("#image3").on("click", function () {
-            crystalScore = crystalThree;
-         totalScore = totalScore + crystalScore;
-            // alert("New score: " + crystalScore);
-            $("#total-score").text("Your total score is:  " + totalScore);
-            $("#score-counter").text("Score of chosen crystal: " + crystalScore);
-            console.log(totalScore);
-            console.log(crystalScore);
+$("#image3").on("click", function () {
+    crystalScore = crystalThree;
+    totalScore = totalScore + crystalScore;
+    // alert("New score: " + crystalScore);
+    $("#total-score").text("Your total score is:  " + totalScore);
+    $("#score-counter").text("Score of chosen crystal: " + crystalScore);
+    console.log(totalScore);
+    console.log(crystalScore);
 
-            if (totalScore === goalNumber) {
-                gameWin();
-                randGoalSelection(19, 120);
-            }
-                else if (totalScore > goalNumber){
-                    gameLoss();
-                    randGoalSelection(19, 120);
-                }
-            }
-        )
-            $("#image4").on("click", function () {
-                crystalScore = crystalFour;
-                totalScore = totalScore + crystalScore;
-                // alert("New score: " + crystalScore);
-                $("#total-score").text("Your total score is:  " + totalScore);
-                $("#score-counter").text("Score of chosen crystal: " + crystalScore);
-                console.log(totalScore);
-                console.log(crystalScore);
+    if (totalScore === goalNumber) {
+        gameWin();
+        randGoalSelection(19, 120);
+    }
+    else if (totalScore > goalNumber) {
+        gameLoss();
+        randGoalSelection(19, 120);
+    }
+}
+)
+$("#image4").on("click", function () {
+    crystalScore = crystalFour;
+    totalScore = totalScore + crystalScore;
+    // alert("New score: " + crystalScore);
+    $("#total-score").text("Your total score is:  " + totalScore);
+    $("#score-counter").text("Score of chosen crystal: " + crystalScore);
+    console.log(totalScore);
+    console.log(crystalScore);
 
-                if (totalScore === goalNumber) {
-                    gameWin();
-                    randGoalSelection(19, 120);
-                }
-                    else if (totalScore > goalNumber){
-                        gameLoss();
-                        randGoalSelection(19, 120);
-                    }
-                
-            })
-        
-            randGoalSelection(19, 120);
+    if (totalScore === goalNumber) {
+        gameWin();
+        randGoalSelection(19, 120);
+    }
+    else if (totalScore > goalNumber) {
+        gameLoss();
+        randGoalSelection(19, 120);
+    }
 
+})
 
+randGoalSelection(19, 120);
 
 
-            
+
+
+
