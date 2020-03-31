@@ -38,7 +38,7 @@ function randGoalSelection() {
     $("#image2").attr("value", this.crystalTwo);
     $("#image3").attr("value", this.crystalThree);
     $("#image4").attr("value", this.crystalFour);
-    $("#random-number").html(goalNumber);
+    $("#random-number").html("Your random number is: " + goalNumber);
     console.log(crystalOne);
     console.log(crystalTwo);
     console.log(crystalThree);

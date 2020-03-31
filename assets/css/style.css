@@ -6,16 +6,46 @@ h1 {
 
 .directions {
     background-color: bisque;
-    padding: 5px;
+    padding: 20% 2px;
 }
 
 #random-number {
-    height: 100px;
+    /* height: 100px; */
     background-color: greenyellow;
+    font-size: large;
+    text-align: center;
+    padding: 15% 0;
 }
 
 #image1, #image2, #image3, #image4 {
-    height: 75px;
-    width: 75px;
+    height: 125px;
+    width: 125px;
 }
 
+.name {
+    text-align: center;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+#wins-loss-text{
+    background-color: lightblue;
+    padding: 15% 0;
+    font-size: large;
+}
+
+.scores{
+    background-color: lightpink;
+    padding: 15% 0;
+    font-size: large;
+}
+
+.body{
+background-color: cornsilk;
+}
+
+/* .scorecount{
+    background-color: lightpink;
+} */
